@@ -36,6 +36,16 @@
     .hero-note{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#827b70}
     .scroll{margin:52px auto 0;width:22px;height:36px;border:1px solid rgba(213,173,98,.5);border-radius:20px;display:flex;justify-content:center;padding-top:7px}.scroll:after{content:"";width:3px;height:7px;border-radius:5px;background:var(--gold);animation:scroll 1.5s infinite}
     section{padding:105px 7vw}.section-kicker{color:var(--gold);font-size:10px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:16px}.section-title{font-family:'Playfair Display',serif;font-size:clamp(34px,5vw,55px);font-weight:600;margin:0 0 22px}.about{display:grid;grid-template-columns:1fr 1fr;gap:9vw;align-items:center;background:#0e0e0e}.about-copy p{color:var(--muted);line-height:1.9;font-size:14px;max-width:520px}.about-visual{min-height:340px;border:1px solid var(--line);background:radial-gradient(circle at 50% 45%,rgba(213,173,98,.13),transparent 56%),linear-gradient(145deg,#171512,#0b0b0b);display:grid;place-items:center;position:relative;overflow:hidden}.about-visual:before{content:"";position:absolute;inset:16px;border:1px solid rgba(213,173,98,.16)}.seal{width:190px;height:190px;border:1px solid rgba(213,173,98,.55);border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--gold2);font-family:'Playfair Display',serif;letter-spacing:.13em;box-shadow:0 0 70px rgba(213,173,98,.10),inset 0 0 40px rgba(213,173,98,.07)}.seal strong{font-size:29px;display:block}.seal small{font:9px 'DM Sans';letter-spacing:.24em}
+    .brand-gallery{background:radial-gradient(ellipse at 50% 45%,rgba(154,111,43,.10),transparent 62%),#0c0c0c}
+    .brand-gallery-head{text-align:center;max-width:680px;margin:0 auto 42px}
+    .brand-gallery-head p{color:var(--muted);font-size:14px;line-height:1.8}
+    .brand-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1120px;margin:0 auto}
+    .brand-tile{min-width:0;min-height:190px;position:relative;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 50% 42%,rgba(241,217,157,.18),transparent 34%),linear-gradient(135deg,#201b12,#0b0b0b 65%);display:grid;place-items:center}
+    .brand-tile:before{content:"";position:absolute;inset:12px;border:1px solid rgba(213,173,98,.18);pointer-events:none}
+    .brand-tile:after{content:"✦";font-family:'Playfair Display',serif;font-size:38px;color:rgba(241,217,157,.75);text-shadow:0 0 28px rgba(213,173,98,.35)}
+    .brand-tile:nth-child(2n){background:radial-gradient(circle at 50% 45%,rgba(213,173,98,.15),transparent 38%),linear-gradient(145deg,#171717,#21190e)}
+    .brand-tile:nth-child(3n){background:radial-gradient(ellipse at 50% 50%,rgba(241,217,157,.13),transparent 48%),linear-gradient(120deg,#0b0b0b,#19140c)}
+    .brand-tile span{position:absolute;bottom:22px;color:rgba(241,217,157,.72);font-size:9px;letter-spacing:.25em;text-transform:uppercase}
     .contact{text-align:center;background:radial-gradient(ellipse at 50% 100%,rgba(154,111,43,.12),transparent 55%),#090909}.contact p{color:var(--muted);font-size:14px;line-height:1.8}.contact-card{display:inline-flex;align-items:center;gap:15px;margin-top:25px;padding:18px 25px;border:1px solid var(--line);background:linear-gradient(120deg,rgba(213,173,98,.10),rgba(255,255,255,.02));transition:.3s}.contact-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 12px 35px rgba(0,0,0,.3)}.contact-icon{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--gold);color:var(--gold);font-size:18px}.contact-label{text-align:left}.contact-label small{display:block;color:var(--muted);font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:4px}.contact-label strong{font-size:15px;letter-spacing:.08em}
     .age{margin:0;padding:18px 7vw;text-align:center;background:#111;border-top:1px solid var(--line);color:#a9a39a;font-size:10px;letter-spacing:.08em;line-height:1.7}.age strong{color:var(--gold2)}
     footer{padding:27px 7vw;display:flex;justify-content:space-between;align-items:center;color:#706b63;font-size:10px;letter-spacing:.1em;border-top:1px solid rgba(255,255,255,.06)}footer span{color:var(--gold)}
@@ -63,7 +73,7 @@
       .section-title{font-size:clamp(32px,9vw,44px)}
       .about-visual{width:100%;min-width:0;min-height:250px}
       .seal{width:150px;height:150px}
-      .contact{padding:75px 6vw}
+      .brand-gallery{padding:72px 6vw}.brand-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.brand-tile{min-height:145px}.brand-tile:before{inset:8px}.brand-tile span{bottom:17px;font-size:8px}      .contact{padding:75px 6vw}
       .contact-card{max-width:100%;padding:15px 16px}
       .contact-label strong{font-size:13px}
       .age{padding:18px 6vw}
@@ -105,6 +115,20 @@
       </div>
       <div class="about-visual reveal from-right" aria-label="Identidad visual AFRO LICORES">
         <div class="seal"><div><strong>AFRO</strong><small>LICORES · OFICIAL</small></div></div>
+      </div>
+    </section>
+    <section class="brand-gallery" id="galeria-marca">
+      <div class="brand-gallery-head reveal"><div class="section-kicker">Universo AFRO</div><h2 class="section-title">Detalles de nuestra identidad</h2><p>Una galería visual inspirada en los tonos, destellos y personalidad de la marca.</p></div>
+      <div class="brand-gallery-grid">
+        <div class="brand-tile reveal from-left" aria-label="Composición decorativa dorada"><span>AFRO · 01</span></div>
+        <div class="brand-tile reveal"><span>AFRO · 02</span></div>
+        <div class="brand-tile reveal from-right"><span>AFRO · 03</span></div>
+        <div class="brand-tile reveal from-left"><span>AFRO · 04</span></div>
+        <div class="brand-tile reveal"><span>AFRO · 05</span></div>
+        <div class="brand-tile reveal from-right"><span>AFRO · 06</span></div>
+        <div class="brand-tile reveal from-left"><span>AFRO · 07</span></div>
+        <div class="brand-tile reveal"><span>AFRO · 08</span></div>
+        <div class="brand-tile reveal from-right"><span>AFRO · 09</span></div>
       </div>
     </section>
     <section class="contact" id="contacto">
